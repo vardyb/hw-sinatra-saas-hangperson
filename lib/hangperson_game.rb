@@ -17,7 +17,6 @@ class HangpersonGame
   end
 
   def guess(guess)
-
     if guess == nil || guess == '' || guess == '%' || guess !~ /[a-zA-Z]/
       raise ArgumentError, 'Invalid argument'
     end
