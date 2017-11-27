@@ -17,7 +17,7 @@ class HangpersonGame
   end
 
   def guess(guess)
-    raise ArgumentError, 'Invalid argument' unless guess =~ /[a-z]/i
+    raise ArgumentError, 'Invalid argument' unless guess =~ /[a-zA-Z]/
 
     guess.downcase!
     if @word.include? guess
